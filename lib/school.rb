@@ -19,6 +19,7 @@ class School
   
   def sort
     students = []
-    self.roster.each do |grade, students|
-      
+    students << self.roster.values
+    students.flatten
+    binding.pry
 end 
