@@ -18,8 +18,9 @@ class School
   end
   
   def sort
-    students = []
-    students << self.roster.values
-    students.flatten
+    result = {}
+    self.roster.each do |grade, students|
+      result[grade] = students.sort 
+    end
   end
 end 
