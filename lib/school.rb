@@ -21,6 +21,5 @@ class School
     students = []
     students << self.roster.values
     students.flatten
-    binding.pry
   end
 end 
