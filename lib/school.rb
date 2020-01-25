@@ -16,4 +16,9 @@ class School
   def grade(grade)
     self.roster[grade]
   end
+  
+  def sort
+    students = []
+    self.roster.each do |grade, students|
+      
 end 
