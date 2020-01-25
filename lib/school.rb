@@ -9,7 +9,6 @@ class School
   end
   
   def add_student(name, grade)
-    binding.pry
     self.roster[grade] = [] if !self.roster[grade]
     self.roster[grade] << name
   end 
