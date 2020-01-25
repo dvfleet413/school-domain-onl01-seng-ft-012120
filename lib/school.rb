@@ -22,5 +22,6 @@ class School
     self.roster.each do |grade, students|
       result[grade] = students.sort 
     end
+    result.sort
   end
 end 
